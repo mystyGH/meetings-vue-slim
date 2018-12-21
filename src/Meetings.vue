@@ -49,7 +49,7 @@
       removeParticipant(participant) {
         const index = this.people.indexOf(participant);
         this.$http.delete('participants/'+participant.id).then(response => {
-      	this.people.push(participant);
+      	const index = this.people.indexOf(participant);
 	 
 	})
        this.people.splice(index, 1);
